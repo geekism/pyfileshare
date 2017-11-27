@@ -1050,6 +1050,12 @@ def main():
     |  --  |   _|  _  |  _  |  _  |  |  |
     |_____/|__| |_____|_____|   __|___  |
                             |__|  |_____|
+
+
+
+Additional Commands:
+        Create SSL Cert:
+            openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
     ''')
     term_args = parse_args(ignore_defaults=True)
     cfg = term_args.get('config_file', default_configfile())
